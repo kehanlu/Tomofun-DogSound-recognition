@@ -17,13 +17,42 @@ Data Augmentation + ResNet18
 
 **決賽**
 
-MLops
+AWS MLOps
 
 |             | Rank |          AUC | Response Success Rate |
 |-------------|-----:|-------------:|----------------------:|
 |  Test round |   15 | 0.8352815001 |               100.00% |
 | Final round |    9 | 0.9373086568 |               100.00% |
 
+---
+
+## Structure
+
+Model: 初賽模型
+
+incremental-training: 決賽 MLOps `WIP`
+
+```
+.
+├── Model
+│   └── Dataset
+│       ├── augmented
+│       │   ├── 0.9
+│       │   │   ├── public_test
+│       │   │   └── train
+│       │   ├── 1.1
+│       │   │   ├── public_test
+│       │   │   └── train
+│       │   └── noise
+│       │       ├── public_test
+│       │       └── train
+│       ├── musan
+│       │   └── noise
+│       │       └── sound-bible
+│       ├── public_test
+│       └── train
+└── incremental-training
+```
 
 
 ## Acknowledgement
